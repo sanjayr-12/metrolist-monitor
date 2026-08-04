@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "metrolist-monitor",
+  "main": "src/index.js",
+  "compatibility_date": "2024-01-01",
+  "triggers": {
+    "crons": ["0 * * * *"]
+  },
+  "kv_namespaces": [
+    {
+      "binding": "METROLIST_KV",
+      "id": "2ba30bc3b08f41dbbc302aadcd86a2d5"
+    }
+  ]
+}
